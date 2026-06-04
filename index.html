@@ -21,7 +21,7 @@
             <!-- input box -->
             <p class="bg-[#625fff54] text-[#625fff7c] px-2 font-medium">$  
               <span>
-                <input class="w-[80px] font-semibold border-none outline-none p-1 text-[#625fffe1]" placeholder="0.00" type="number">
+                <input id="bill" class="w-[80px] font-semibold border-none outline-none p-1 text-[#625fffe1]" placeholder="0.00" type="number">
               </span>
             </p>
          </div>
@@ -30,7 +30,7 @@
          <div class="flex justify-between text-[#00000098] font-semibold py-3 text-lg border-b border-[#00000013]">
             <p>Tip</p>
             <p>$
-              <span>0</span>
+              <span id="totalTip">0</span>
             </p>
          </div>
 
@@ -38,7 +38,7 @@
           <div class="flex justify-between text-[#00000098] font-[500] py-3 text-lg">
             <p>Total Amount</p>
             <p>$
-              <span>0</span>
+              <span id="tota_amount">0</span>
             </p>
          </div>
 
@@ -46,18 +46,18 @@
           <div class="flex flex-col py-3">
             <div class="flex justify-between text-[#00000098] font-semibold text-lg pb-3">
               <p>Tip %</p>
-              <p>0%</p>
+              <p id="tip_amount">0</p>
             </div>
-            <input type="range" min="0" max="100" value="40" class="range range-xs text-black [--range-bg:#615fff] [--range-fill:0]" />
+            <input id="tip_percentage" type="range" min="0" max="100" value="40" class="range range-xs text-black [--range-bg:#615fff] [--range-fill:0]" />
           </div>
           
          <!-- total people -->
           <div class="flex flex-col py-3">
             <div class="flex justify-between text-[#00000098] font-semibold text-lg pb-3">
               <p>No. of people</p>
-              <p>0%</p>
+              <p id="totalPeople">0</p>
             </div>
-            <input type="range" min="0" max="100" value="40" class="range range-xs text-black [--range-bg:#615fff] [--range-fill:0]" />
+            <input id="people_amount" type="range" min="0" max="100" value="40" class="range range-xs text-black [--range-bg:#615fff] [--range-fill:0]" />
           </div>
 
           <!-- calculation -->
@@ -66,7 +66,7 @@
             <div class="flex justify-between font-medium text-lg">
               <p>Tip per person</p>
               <p>$
-                <span>0</span>
+                <span id="perPerson_tip">0</span>
               </p>
             </div>
 
@@ -74,7 +74,7 @@
             <div class="flex justify-between font-medium pt-3 text-lg">
               <p>Total per person</p>
               <p>$
-                <span>0</span>
+                <span id="totalCalculation">0</span>
               </p>
             </div>
          </div>
