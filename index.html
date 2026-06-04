@@ -12,23 +12,34 @@
 </head>
 <body class="bg-indigo-500 h-screen flex justify-center items-center">
     
-    <div class="w-[450px] h-[550px] bg-[#ffffff] rounded-xl">
-        <!-- bill -->
-         <div>
-            <p>Bill</p>
-            <input placeholder="$ 0.00" type="number">
+    <div class="w-[450px] h-[550px] bg-[#ffffff] rounded-xl py-12 px-10">
+        <!-- 
+        bill 
+         -->
+         <div class="flex justify-between">
+            <p class="text-[#00000098] font-semibold">Bill</p>
+            <!-- input box -->
+            <p class="bg-[#625fff54] text-[#625fff7c] px-2 font-medium">$  
+              <span>
+                <input class="w-[80px] font-semibold border-none outline-none p-1 text-[#625fffe1]" placeholder="0.00" type="number">
+              </span>
+            </p>
          </div>
 
          <!-- tip -->
          <div>
             <p>Tip</p>
-            <p>$0</p>
+            <p>$
+              <span>0</span>
+            </p>
          </div>
 
          <!-- total ammount -->
           <div>
             <p>Total Amount</p>
-            <p>$0</p>
+            <p>$
+              <span>0</span>
+            </p>
          </div>
 
          <!-- tip -->
@@ -53,11 +64,15 @@
           <div>
             <!-- tip per person calculation -->
             <p>Total Amount</p>
-            <p>$0</p>
+            <p>$
+              <span>0</span>
+            </p>
 
             <!-- calculate total ammount -->
             <p>Total Amount</p>
-            <p>$0</p>
+            <p>$
+              <span>0</span>
+            </p>
          </div>
     </div>
     
