@@ -21,8 +21,8 @@ function calculateTip(){
     const perPerson_Percentage = document.getElementById('people_percentage').value;
    
     // calculate total tip percentages
-    const totalTip = parseFloat((bill * (perTip_Percentage / 100))).toFixed(2);
-    const totalBill = parseFloat(bill + totalTip).toFixed(2);
+    const totalTip = parseFloat((bill * (perTip_Percentage / 100)).toFixed(2));
+    const totalBill = parseFloat((bill + totalTip).toFixed(2));
 
     // calculate total tip for per person 
     const perPerson = (totalTip / perPerson_Percentage).toFixed(2);
@@ -30,7 +30,10 @@ function calculateTip(){
 
     // display total tip amount on web page 
     const totalTipText = document.getElementById('totalTip').textContent = `${totalTip}`;
-    
+    const totalAmountText = document.getElementById('total_amount').textContent = `${totalBill}`;
+
+    // display tip percentage on web page
+    const tipAmountText = document.getElementById('tip_amount').textContent = `${perTip_Percentage}`;
 }
 
 
