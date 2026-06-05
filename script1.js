@@ -38,8 +38,8 @@ function calculateTip(){
     // display person percentage on web page
     const perPersonText = document.getElementById('totalPeople').textContent = perPerson_Percentage;
 
-    // display tip calculation on the page
-    document.getElementById('perPerson_tip').textContent = totalTip;
+    // display per person tip calculation on the page
+    document.getElementById('perPerson_tip').textContent = perPerson;
     document.getElementById('totalCalculation').textContent = perPerson_totalBill;
 }
 calculateTip();
