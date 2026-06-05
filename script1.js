@@ -15,6 +15,10 @@ function calculateTip(){
     const bill = parseFloat(billInput.value);
     billInput.value = bill.toFixed(2);
    
+    // get tip percentage per person
+    const perTip_Percentage = document.getElementById('tip_percentage').value;
+    // get total people percentage 
+    const perPerson_Percentage = document.getElementById('people_amount').value;
    
     
 }
