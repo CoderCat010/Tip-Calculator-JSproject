@@ -27,6 +27,10 @@ function calculateTip(){
     // calculate total tip for per person 
     const perPerson = (totalTip / perPerson_Percentage).toFixed(2);
     const perPerson_totalBill = (totalBill / perPerson_Percentage).toFixed(2);
+
+    // display total tip amount on web page 
+    const totalTipText = document.getElementById('totalTip').textContent = `${totalTip}`;
+    
 }
 
 
