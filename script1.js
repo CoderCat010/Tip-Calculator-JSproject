@@ -9,5 +9,14 @@ rangeSliders.forEach(function(slider){
 const billInput = document.getElementById('bill');
 billInput.addEventListener('change', calculateTip);
 
+// calculateTip function
+function calculateTip(){
+    // parsefloat bill input value
+    const bill = parseFloat(billInput.value);
+    billInput.value = bill.toFixed(2);
+   
+   
+    
+}
 
 
