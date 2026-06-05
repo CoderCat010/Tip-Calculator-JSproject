@@ -33,7 +33,14 @@ function calculateTip(){
     const totalAmountText = document.getElementById('total_amount').textContent = `${totalBill}`;
 
     // display tip percentage on web page
-    const tipAmountText = document.getElementById('tip_amount').textContent = `${perTip_Percentage}`;
-}
+    const tipAmountText = document.getElementById('tip_amount').textContent = `${perTip_Percentage}%`;
 
+    // display person percentage on web page
+    const perPersonText = document.getElementById('totalPeople').textContent = perPerson_Percentage;
+
+    // display tip calculation on the page
+    document.getElementById('perPerson_tip').textContent = totalTip;
+    document.getElementById('totalCalculation').textContent = perPerson_totalBill;
+}
+calculateTip();
 
